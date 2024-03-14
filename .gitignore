@@ -1,3 +1,4 @@
 /dataset
 /common
 fhvhv_tripdata_2020-03.parquet
+/docker-airflow
