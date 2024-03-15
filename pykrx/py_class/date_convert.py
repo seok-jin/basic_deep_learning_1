@@ -42,3 +42,15 @@ class DateConverter:
         
         else:
             raise ValueError("잘못된 날짜 형식입니다.")
+        
+
+class StockDay :
+    def __init__(self) -> None:
+        self.market_date
+
+    def get_now_date():
+        now_date = dt.now()
+        return DateConverter.convert_to_yyyymmdd(now_date)
+    
+    def get_weekdays(date):
+        return True if DateConverter.convert_to_datetime(date).weekday() <= 4 else False
