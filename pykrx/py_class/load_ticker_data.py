@@ -30,7 +30,7 @@ class load_ticker_list:
             for i in range(len(data["ticker"])):
                 ticker_name.append(stock.get_market_ticker_name(data["ticker"][i]))
                 insert_dt.append(append_dt)
-                comment.append('')
+                comment.append('-')
     
             df_tickers.insert(1,"ticker_name",ticker_name,True)
             df_tickers.insert(2,"comment",comment,True)
