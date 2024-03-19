@@ -69,11 +69,12 @@ class load_ticker_list:
         new_tickers.insert(1,"ticker_name",ticker_name,True)
         # new_tickers.to_csv(ticker_dir)
         changes  = new_tickers[new_tickers['ticker'].isin(old_ticker['ticker'])]
-        changes = changes[changes['ticker_name'] != old_ticker['ticker_name']]
+        # changes = changes[changes['ticker_name'] != old_ticker['ticker_name']]
+        df_merge = pd.merge(old_ticker, changes, on='ticker')
+        changes = df_merge[df_merge['ticker_name_x'] != df_merge['ticker_name_y']][['ticker','ticker_name_y','comment','insert_dt','update_dt','use_yn']]
 
-        # old_ticker[old_ticker['ticker']=='001045',ticker_name] = 'CJ대한통운'
-        old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'comment'] = old_ticker['ticker_name']+' -> '+changes['ticker_name']
-        old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'ticker_name'] = changes['ticker_name']
+        old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'comment'] = old_ticker['ticker_name']+' -> '+changes['ticker_name_y']
+        old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'ticker_name'] = changes['ticker_name_y']
         old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'update_dt'] = DateConverter.convert_to_dash_format(StockDay.get_now_date())
 
         ticker_dir = './data/ticker_list.csv'
