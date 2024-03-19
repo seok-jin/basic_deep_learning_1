@@ -11,3 +11,11 @@ from pykrx import bond
 
 # user package
 from py_class.date_convert import DateConverter,StockDay
+
+
+
+def logging_text(text):
+        logging.basicConfig(filename='./log/'+StockDay.get_now_date()+'.log', level=logging.INFO, encoding='euc-kr')    
+        dt = tmdt.now()
+        logging.info('time '+dt.strftime("%Y-%m-%dT%H:%M:%S")+' : '+text)
+

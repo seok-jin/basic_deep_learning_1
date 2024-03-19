@@ -14,7 +14,7 @@ from py_lib.krx_lib import *
 # old= load_ticker_list()
 # old_ticker = old.df_ticker
 
-logging.basicConfig(filename='./log/'+StockDay.get_now_date()+'.log', level=logging.INFO)
+
 
 ticker_dir = './data/ticker_list.csv'
 
@@ -75,7 +75,8 @@ class load_ticker_list:
         old_ticker.loc[old_ticker['ticker'].isin(changes['ticker']),'update_dt'] = DateConverter.convert_to_dash_format(StockDay.get_now_date())
 
         ticker_dir = './data/ticker_list.csv'
-        logging.info('batch_ticker_list 함수가 실행되었습니다.')
+        # logging.info('batch_ticker_list 함수가 실행되었습니다.')
+        logging_text('batch_ticker_list 함수가 실행되었습니다.')
         old_ticker.to_csv(ticker_dir)
         self.df_ticker = old_ticker
 
