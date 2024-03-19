@@ -84,7 +84,7 @@ class load_ticker_list:
 
     
 
-    def arange_ticker_list():
+    def arange_ticker_list(self):
     # 주기적으로 ticker 리스트를 가져오고 변경된 내역을 확인
         def compare_ticker_lists(previous_ticker_list, current_ticker_list):
             added_tickers = set(current_ticker_list) - set(previous_ticker_list)

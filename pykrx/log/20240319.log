@@ -7,3 +7,15 @@ INFO:root:time 2024-03-19T15:11:35 : 기존 티커 삭제:{'003460', '002820', '248070
 INFO:root:time 2024-03-19T15:20:01 : 티커 생성, 삭제 작업 시작
 INFO:root:time 2024-03-19T15:22:45 : 티커 생성, 삭제 작업 시작
 INFO:root:time 2024-03-19T15:22:49 : 티커 생성, 삭제 작업 종료
+INFO:root:time 2024-03-19T15:28:26 : 티커 생성, 삭제 작업 시작
+INFO:root:time 2024-03-19T15:28:29 : 티커 생성, 삭제 작업 종료
+INFO:root:time 2024-03-19T15:28:51 : 티커 생성, 삭제 작업 시작
+INFO:root:time 2024-03-19T15:28:55 : 티커 생성, 삭제 작업 종료
+INFO:root:time 2024-03-19T15:29:49 : 티커 생성, 삭제 작업 시작
+INFO:root:time 2024-03-19T15:29:53 : 티커 생성, 삭제 작업 종료
+INFO:root:time 2024-03-19T15:31:19 : batch_ticker_list 시작 : ticker 명 변경 내역 조정 작업 
+INFO:root:time 2024-03-19T15:31:22 : batch_ticker_list 종료 : ticker 명 변경 내역 조정 작업 
+INFO:root:time 2024-03-19T15:31:47 : arange_ticker_list 시작 : 티커 생성, 삭제 작업 시작
+INFO:root:time 2024-03-19T15:31:48 : arange_ticker_list 종료 : 티커 생성, 삭제 작업 종료
+INFO:root:time 2024-03-19T15:31:48 : batch_ticker_list 시작 : ticker 명 변경 내역 조정 작업 
+INFO:root:time 2024-03-19T15:31:51 : batch_ticker_list 종료 : ticker 명 변경 내역 조정 작업 
