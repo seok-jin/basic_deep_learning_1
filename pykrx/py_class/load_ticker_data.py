@@ -119,6 +119,7 @@ class load_ticker_list:
             removed_tickers = list(removed_tickers)
             removed_tickers = pd.read_csv("./data/ticker_list.csv" ,index_col=0)
             removed_tickers.loc[removed_tickers['ticker'].isin(removed_tickers),'use_yn'] = 'N'
+            removed_tickers.loc[removed_tickers['ticker'].isin(removed_tickers),'update_dt'] = DateConverter.convert_to_dash_format(StockDay.get_now_date())
             removed_tickers.to_csv("./data/ticker_list.csv")
 
         logging_text("arange_ticker_list 시작 : 티커 생성, 삭제 작업 시작")
