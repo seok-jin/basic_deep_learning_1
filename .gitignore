@@ -9,3 +9,7 @@ pykrx\og
 /pykrx/log
 pykrx/annual_financials_info.csv
 pykrx/new_annual_financials_info.csv
+pykrx/annual_quarterly_financials_info.csv
+pykrx/fin_new_annual_financials_info.csv
+pykrx/fin_new_annual_quarterly_financials_info.csv
+pykrx/new_annual_quarterly_financials_info.csv
