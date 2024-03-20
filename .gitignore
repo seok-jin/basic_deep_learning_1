@@ -4,5 +4,6 @@ fhvhv_tripdata_2020-03.parquet
 /docker-airflow
 /pykrx/data
 .pyc
-/log
+pykrx\og
 .log
+/pykrx/log
