@@ -8,3 +8,4 @@ pykrx\og
 .log
 /pykrx/log
 pykrx/annual_financials_info.csv
+pykrx/new_annual_financials_info.csv
